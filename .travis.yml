@@ -5,5 +5,5 @@ vm:
 rvm: 2.6.3
 jobs:
   include:
-    - stage: "sleep 10"
+    - stage: "sleep 109"
       script: sleep 10
