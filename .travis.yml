@@ -6,4 +6,4 @@ rvm: 2.6.3
 jobs:
   include:
     - stage: "sleep 10"
-      script: sleep 16
+      script: sleep 10
