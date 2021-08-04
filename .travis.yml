@@ -10,4 +10,4 @@ env:
 jobs:
   include:
     - stage: "sleep 109"
-      script: echo $FOO
+      script: echo $FOO && echo $BAR
