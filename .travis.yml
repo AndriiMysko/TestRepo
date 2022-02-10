@@ -3,5 +3,5 @@ env:
     - test_var=test
 import: 
   - 
-    if: env(test_var) is present
+    if: env(test_var) IS present
     source: "test.yml"
