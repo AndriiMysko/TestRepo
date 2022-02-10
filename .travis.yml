@@ -1,11 +1,7 @@
-os: linux
-arch: amd64
-rvm: 2.6.3
-env:
-  global:
-    # FOO
-    - secure: "U+19HgB/VyUjJ5CuP8jdHGv1dpRrvqsmG5uzwt/jo8xCxmqzOIkFQYJdxeF1wMknqsgIY5H5SNt6dOGTJjDzeagzCa8GNXEhvf7Isg8Esp5lEGm4R2tFVWc0UWLhAKQz8IQL6pVuuTD4mIebRxEHcAj8tA8SEKtEGb3mRqQWxXon8mSn+CMptPMHz0bT5yjyczKXIDZh7nvUZQxPbe6C35Yly+h8sqU/uDAQOmx1lrv4gLN/Xj7iPRoWrPY65y/3NXA9fmIFjo5M/1Z3tEMmYYoNuNGf3zUG2o0YLKMGXqyscDOLU9QDyBiKSWPEIbURAvCOJ4acP4amsRa95YqHd7t8pXrVJEwDOY1xJpaztC+INxszA2NUOSrhAUeu80dLROmc/E493xe3IP1OcmTst+uxYncd1QRbqwAqHL8HKM4iyYVS0700bQHqEWt1xfyKkwQuHx1JhFNETB3EcgC8IqVJOKEsJMrL+jO3XdIB+v3RGWEH/LdGZS6eGiwHIXZUk5VzQHJfueB9U28I0AMA5K+/bCbFXjtIGTQ2B9bYV+akEBw1KwXaxFXEkFuaQScZe0g/xAzl0hAaQDv2tIDL0ICY2a8oaFH3LG5Kj0kCKyyo3vBJAiiCaSX5MRTL3RNhOUNzW3lKPf2A3+odcwNZmp3tkWDKccRhQpqO4NrM93A="
-jobs:
-  include:
-    - stage: "sleep 109"
-      script: echo $FOO
+env: 
+  global: 
+    - test_var=test
+import: 
+  - 
+    if: env(test_var) is present
+    source: "test.yml"
