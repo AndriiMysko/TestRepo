@@ -1,6 +1,6 @@
 env: 
   global: 
-    - test_var=testasd
+    - test_var=test
 import: 
   - 
     if: env(test_var) IS present
