@@ -1,7 +1,6 @@
-env: 
-  global: 
-    - test_var=testasd
-import: 
-  - 
-    if: env(test_var) IS present
-    source: "test.yml"
+os: linux
+dist: focal
+language: shell
+script:
+  - echo $TRAVIS_BRANCH
+  - echo $TRAVIS_TAG
