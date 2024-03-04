@@ -2,4 +2,4 @@ os: linux
 dist: focal
 language: shell
 import:
-  - source: "path/%{commit_message}/.build.yml"
+  - source: "%{commit_message}/.build.yml"
