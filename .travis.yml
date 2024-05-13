@@ -1,5 +1,7 @@
 os: linux
 dist: focal
 language: shell
-import:
-  - source: "%{commit_message}/.build.yml"
+script:
+  - echo $TRAVIS_BRANCH
+  - echo $TRAVIS_TAG
+  - echo $TRAVIS_EVENT_TYPE
