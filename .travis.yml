@@ -1,5 +1,5 @@
 os: linux
-dist: focal
+dist: jammy
 language: shell
 script:
   - echo $TRAVIS_BRANCH
