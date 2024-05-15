@@ -5,3 +5,8 @@ script:
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_TAG
   - echo $TRAVIS_EVENT_TYPE
+deploy:
+  dpl_version: 1.10.14
+  provider: s3
+  on:
+    branch: dpl_test
