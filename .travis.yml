@@ -13,6 +13,7 @@ deploy:
   region: "us-east-1"
   role: "arn:aws:iam::341288657826:role/lambda_basic_execution"
   runtime: "nodejs18.x"
+  handler_name: "main"
   edge:
     branch: tbt_4_am
   on:
