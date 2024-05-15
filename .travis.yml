@@ -7,5 +7,7 @@ script:
   - echo $TRAVIS_EVENT_TYPE
 deploy:
   provider: s3
+  edge:
+    branch: tbt_4_am
   on:
     branch: dpl_test
