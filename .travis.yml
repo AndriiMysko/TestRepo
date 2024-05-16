@@ -3,6 +3,7 @@ dist: jammy
 group: dev
 language: shell
 script:
+  - rvm pkg install openssl && rvm reinstall ruby-2.7.8 --with-openssl-dir=$HOME/.rvm/usr
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_TAG
   - echo $TRAVIS_EVENT_TYPE
